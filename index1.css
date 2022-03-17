@@ -1,0 +1,71 @@
+body{
+    background-color: cadetblue;
+}
+span{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 30px;
+    color: brown;
+    position: relative;
+    left: 350px;
+
+}
+.box
+{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    margin: 30px;
+    
+}
+.one
+{
+    transition: all;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: one;
+}
+@keyframes one{
+    50% {
+        height: 120px;
+        width: 150px;
+    }
+}
+
+.two
+{
+    transition: all;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: two;
+}
+@keyframes two{
+    50% {
+        height: 120px;
+    }
+}
+.three
+{
+    transition: all;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: three;
+}
+@keyframes three{
+    50% {
+        width: 150px;
+    }
+}
+.four
+{
+    transition: all;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: four;
+}
+@keyframes four{
+    50% {
+        transform: rotate(360deg);
+    }
+}

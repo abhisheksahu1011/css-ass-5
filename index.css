@@ -1,0 +1,154 @@
+body{
+    background-color: yellow;
+}
+span{
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    left: 300px;
+}
+.box
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.one
+{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition: all;
+    animation-duration:2s;
+    animation-name: first;
+    animation-iteration-count: infinite;
+    margin:30px;
+
+    
+   
+}
+@keyframes first {
+   0%{
+       transform: rotate(30deg);
+   }
+
+   25%{
+    transform: rotate(-30deg);
+   }
+   50%
+   {
+    transform: rotate(30deg);
+   }
+   75%{
+       transform:rotate(-30deg);
+       }
+    100%
+    {
+        transform: rotate(30deg);
+    }
+}
+
+.two{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-duration:2s;
+    animation-name: second;
+    animation-iteration-count: infinite;
+    margin:30px;
+    transform: skewX(-18deg);
+    animation-fill-mode:backwards;
+  
+}
+@keyframes second {
+    0%{
+        transform: skewY(-18deg);
+        }
+    25%{
+         transform: skewY(0deg);
+        }
+    50%{
+         transform: skewY(18deg);
+        }
+    75%{
+         transform: skewY(0deg);
+        }
+    100%{
+         transform: skewY(-18deg);
+        }
+
+  }
+
+
+.three
+{
+    width: 100px;
+    height: 100px;
+    background-color:burlywood;
+     margin:30px;
+     transform:rotate(25deg) ;
+     animation-name: third;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     
+}
+@keyframes third {
+    100%{
+        transform: rotate(360deg);
+        }
+  }
+.four{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation-name: four;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}  
+
+@keyframes four{
+    50% {
+        width: 50px;
+        height: 100px;
+    }
+}
+
+.five{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation-name: five;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 30px;
+
+}  
+
+@keyframes five{
+    50% {
+        height: 50px;
+        width: 50px;
+        margin: 30px;
+    }
+}
+.six {
+    height:140px;
+    width:120px;
+    background-color:green;
+    margin:30px;
+    
+    animation:six 2s linear infinite alternate;
+   
+  }
+  @keyframes six {
+    0% {
+        transform: rotate(25deg);
+    }
+    100%{
+        transform: rotate(135deg);
+    }
+  }
+

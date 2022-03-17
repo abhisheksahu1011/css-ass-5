@@ -1,0 +1,109 @@
+body{
+    border-left-width: 10px ;
+    border-left-style:outset;
+    border-left-color: orange;
+    border-right-width: 10px;
+    border-right-style: outset;
+    border-right-color: rgb(13, 165, 13);
+    border-top-width: 10px;
+    border-top-style: outset;
+    border-top-color: white;
+    margin: 0;
+    padding: 0; 
+}
+.happy
+{
+    color: orange;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.independence{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.day{
+    color: green;
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+.sky{
+    width:100%;
+    position: relative;
+    bottom: 100px;
+    z-index: -1;
+}
+.city{
+    width: 125%;
+    position:relative;
+    bottom: 800px;
+    z-index: -1;
+    animation-name: city;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes city{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(-500px);
+    }
+}
+.road{
+    position:relative;
+    bottom:804px;
+    animation-name: road;
+    z-index: -1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes road{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+       transform: translateX(-3400px) 
+    }
+}
+.car{
+    width:500px;
+    position: relative;
+    bottom: 1200px;
+}
+.wheel{
+    width: 90px;
+    position: relative;
+    bottom: 1300px;
+    left:460px;
+    animation-name: wheel;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes wheel{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(3600deg);
+    }
+}
+.front{
+    width:90px;
+    position:relative;
+    bottom:1395px;
+    left:765px;
+    animation-name: wheel;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.back{
+    position: relative;
+    bottom: 1280px;
+    text-decoration: underline;
+    color: brown;
+    font-size: 50px;
+}
